@@ -1,0 +1,38 @@
+.wrapper{
+    animation: transitionIn 3s ;
+}
+
+
+
+
+@keyframes transitionIn {
+    from{
+        opacity:0 ;
+        transform: rotateXdeg(-10deg);
+
+    }
+
+    to {
+        opacity:1 ;
+        transform: rotateXdeg(0);
+
+    }
+}
+
+.wrapper .sidebar {
+    animation:  slidein 2s;
+
+}
+
+@keyframes slidein {
+    from { 
+        opacity:0;
+        height:30%;
+        transform: rotateY(-10deg);
+    }
+    to   { 
+        opacity:1;
+        height:100%;
+        transform: rotateY(0);
+     }
+  }

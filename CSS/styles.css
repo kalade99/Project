@@ -9,6 +9,11 @@
   font-family: 'Arial';
 }
 
+html {
+
+  scroll-behavior: smooth;
+}
+
 body{
    background-color: #f3f5f9;
 }
@@ -25,9 +30,33 @@ body{
   height: 100%;
   background: #f3d250;
   position: fixed;
-}
-.wrapper .sidebar ul {
 
+}
+.wrapper .sidebar .logo a {
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .burger {
+ display: none;
+ margin-top: 250px;
+ margin-left: 35%;
+}
+.wrapper .sidebar .burger div {
+
+width:30px;
+height: 3px;
+background-color: black;
+margin:3px;
+
+  
+}
+
+.wrapper .sidebar ul {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,11 +68,43 @@ body{
   
 }    
 
-.wrapper .sidebar ul li:hover{
-  color:gray;
-}
+.wrapper .sidebar ul li a {
     
-.wrapper .first {
+    color: black;
+ 
+   } 
+   
+   .wrapper .sidebar ul li a:hover {
+    transition: color 0.2s ease;
+    color: #90ccf4;
+
+   } 
+   
+
+   .wrapper .sidebar .social_media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .wrapper .sidebar .social_media a{
+    display: block;
+    width: 40px;
+    background:#90ccf4;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0 5px;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+
+
+.wrapper #first {
   display: flex;
   flex-direction: row-reverse;
   border: solid 5px blueviolet;
@@ -52,23 +113,24 @@ body{
   background: url('../IMG/back.jpg');
   background-repeat: no-repeat;
   background-size: cover; 
-  /*background-attachment: fixed;*/
+  background-attachment: fixed;
   /*justify-content: center;*/
   align-items: center;
   
 } 
 
 
-.wrapper .first .main_content{
+.wrapper #first .main_content{
+ 
  border: solid 2px red;
   width: 40%;
   text-align: right;
   margin-right: 200px;
-  
+
 
 }
 
-.wrapper .first .main_content .header{
+.wrapper #first .main_content .header{
   padding: 20px;
   color: #717171;
   width:40%;
@@ -77,7 +139,7 @@ body{
  
 }
 
-.wrapper .first .main_content .slogan{
+.wrapper #first .main_content .slogan{
 
   color: #717171;
   line-height: 25px;
@@ -85,12 +147,12 @@ body{
   padding: 0 0 30px;
 }
 
-.wrapper .first .main_content .quote {
+.wrapper #first .main_content .quote {
   padding: 10px;
  font-style: italic;
 }
 
-.wrapper .second {
+.wrapper #second {
   display: flex;
   border: solid 5px blueviolet;
   width: 100%;
@@ -99,7 +161,7 @@ body{
   align-items: center;
 } 
 
-.wrapper .second .about {
+.about {
 border: solid 2px red;
 display: flex;
  justify-content: center;
@@ -109,6 +171,7 @@ display: flex;
  text-align: center;
  
 }
-.wrapper .second .about .p1 {
+.wrapper #second .about .p1 {
   padding: 20px;
 }
+
