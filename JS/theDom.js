@@ -49,6 +49,5 @@ for (var i = 0; i < navBtns.length; i++)
     console.log(navBtns[i]);
     navBtns[i].addEventListener("click", changeColor.bind(null, navBtns[i], navBtns));
 }
-  
 
 });
