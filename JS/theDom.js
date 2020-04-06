@@ -18,9 +18,7 @@ img1.style.transition = 'height 0.5s ease-in';
 
 var aboutClick = document.getElementById('about');
 console.log(aboutClick);
-
-aboutClick.addEventListener('click', function() {
-
+aboutClick.addEventListener('click', function() 
 aboutClick.style.color = 'blue';
 
 
