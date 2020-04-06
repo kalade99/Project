@@ -16,10 +16,10 @@ img1.style.transition = 'height 0.5s ease-in';
 
 })
 
-var aboutClick = document.getElementById('about');
+var aboutClick = document.getElementById('goToAbout');
 console.log(aboutClick);
-aboutClick.addEventListener('click', function() 
-aboutClick.style.color = 'blue';
+aboutClick.addEventListener('click', function() {
+aboutClick.style.color = ' #90ccf4';
 
 
 })
