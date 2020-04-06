@@ -21,7 +21,6 @@ console.log(aboutClick);
 aboutClick.addEventListener('click', function() {
 aboutClick.style.color = ' #90ccf4';
 
-
 })
 /*activeImg.addEventListener('mouseout', function() {
 
