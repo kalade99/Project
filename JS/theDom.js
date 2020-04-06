@@ -1,28 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    var list = document.getElementsByTagName('li');
-    console.log(list);
+var img1 = document.getElementById('img1');
+var activeImg = document.getElementById('active');
+console.log(activeImg)
+console
+activeImg.addEventListener('mouseover', function() {
 
-    var listItems = document.querySelectorAll('#list li');
-    // iterate over the <li> elements
-    listItems.forEach(function (listItem) {
-    // this function is called for each <li> element
-    listItem.addEventListener('click', function () {
-    // as soon as the list item is clicked, change its color to red
-    this.style.color = 'red';
-  });
+activeImg.style.background = 'red';
+activeImg.style.transition = 'background-color 0.5s ease'
+img1.style.opacity = '1';
+img1.style.transition = 'opacity 0.5s ease';
+img1.style.height = '80%';
+img1.style.transition = 'height 0.5s ease-in';
+
+
+})
+
+var aboutClick = document.getElementById('about');
+console.log(aboutClick);
+
+aboutClick.addEventListener('click', function() {
+
+aboutClick.style.color = 'blue';
+
+
+})
+/*activeImg.addEventListener('mouseout', function() {
+
+    
+    activeImg.style.background = 0;
+    
+    
+    })*/
+    
+  
+
 });
-
- /*   list[0].addEventListener('click', function(event) {
-        console.log(event);
-        console.log(event.target);
-
-        event.target.style.color = '#90ccf4';    
-    });
-
-    list[1].addEventListener('click', function(event) {
-        console.log(event);
-        console.log(event.target);
-        event.target.style.color = '#90ccf4'; 
-    });*/
-}); 
