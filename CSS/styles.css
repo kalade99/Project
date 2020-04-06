@@ -6,7 +6,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Arial';
+  font-family: 'Raleway';
 }
 
 html {
@@ -16,6 +16,7 @@ html {
 
 body{
    background-color: #f3f5f9;
+
 }
 
 .wrapper{
@@ -35,10 +36,17 @@ body{
 .wrapper .sidebar .logo a {
 
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+}
+
+.logo a {
+
+  font-family: 'Abril Fatface';
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .wrapper .sidebar .burger {
@@ -65,7 +73,8 @@ margin:3px;
 .wrapper .sidebar ul li{
   padding: 30px;
   font-size:20px ;
-  
+  font-weight: 500;
+  font-size: 20px;
 }    
 
 .wrapper .sidebar ul li a {
@@ -122,7 +131,7 @@ margin:3px;
 
 .wrapper #first .main_content{
  
- border: solid 2px red;
+ /*border: solid 2px red;*/
   width: 40%;
   text-align: right;
   margin-right: 200px;
@@ -130,13 +139,16 @@ margin:3px;
 
 }
 
-.wrapper #first .main_content .header{
-  padding: 20px;
-  color: #717171;
-  width:40%;
+
+.wrapper #first .main_content .header h1{
+  padding: 30px;
+  color: gray;
+  width:50%;
   /*border:solid 1px red;*/
-  margin-left:62% ;
- 
+  margin-left: 53%;
+ font-family: 'Abril Fatface';
+ font-size: 45px;
+ font-weight: 200;
 }
 
 .wrapper #first .main_content .slogan{
