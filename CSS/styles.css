@@ -7,6 +7,7 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Raleway';
+  
 }
 
 html {
@@ -16,22 +17,22 @@ html {
 
 body{
    background-color: #f3f5f9;
-
+   color: rgb(32, 32, 32);
 }
 
 .wrapper{
   display: flex;
   position: relative;
   flex-direction: column ;
-  
+  background-color: #f3d250;
 }
+
+/*Nvaigation bar*/
 
 .wrapper .sidebar{
   width: 200px;
   height: 100%;
-  background: #f3d250;
   position: fixed;
-
 }
 .wrapper .sidebar .logo a {
 
@@ -40,28 +41,10 @@ body{
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-}
-
-.logo a {
-
+  color:#f78888;
   font-family: 'Abril Fatface';
   font-size: 50px;
   font-weight: 700;
-}
-
-.wrapper .sidebar .burger {
- display: none;
- margin-top: 250px;
- margin-left: 35%;
-}
-.wrapper .sidebar .burger div {
-
-width:30px;
-height: 3px;
-background-color: black;
-margin:3px;
-
-  
 }
 
 .wrapper .sidebar ul {
@@ -73,82 +56,111 @@ margin:3px;
 .wrapper .sidebar ul li{
   padding: 30px;
   font-size:20px ;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
 }    
-
 .wrapper .sidebar ul li a {
-    
-    color: black;
+  color:dimgray;
+} 
+.wrapper .sidebar ul li a:hover {
+transition: color 0.2s ease;
+color: #90ccf4;
+} 
+/*Social Media*/
+.wrapper .sidebar .search {
+
+  position: absolute;
+  display: flex;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
  
-   } 
-   
-   .wrapper .sidebar ul li a:hover {
-    transition: color 0.2s ease;
-    color: #90ccf4;
+}
+.wrapper .sidebar .search input {
 
-   } 
-   
-
-   .wrapper .sidebar .social_media{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
+  background:#f3d250;
+  border: 1px solid #90ccf4;
+  width:160px;
+  height: 30px;
   
-  .wrapper .sidebar .social_media a{
-    display: block;
-    width: 40px;
-    background:#90ccf4;
-    height: 40px;
-    line-height: 45px;
-    text-align: center;
-    margin: 0 5px;
-    color: black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+}
+.wrapper .sidebar .search button {
+
+  background: #f78888;
+  border: none;
+  width:30px;
+}
+.wrapper .sidebar .search button:hover {
+background:#90ccf4;
+}
+.wrapper .sidebar .social_media{
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+}
+.wrapper .sidebar .social_media a{
+display: block;
+width: 40px;
+background:#90ccf4;
+height: 40px;
+line-height: 45px;
+text-align: center;
+margin: 0 5px;
+color: black;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
   }
 
 
+/*First page*/
 
 .wrapper #first {
   display: flex;
   flex-direction: row-reverse;
-  border: solid 5px blueviolet;
+ /* border: solid 5px blueviolet;*/
   width: 100%;
   height: 1000px;
-  background: url('../IMG/back.jpg');
+  background: url('../IMG/03c.png');
   background-repeat: no-repeat;
-  background-size: cover; 
-  background-attachment: fixed;
+  background-size: 30%; 
+  background-position-x: 220px;
+  background-position-y: 140px;
+  /*background-attachment: fixed;*/
   /*justify-content: center;*/
   align-items: center;
-  
-} 
-
-
-.wrapper #first .main_content{
- 
- /*border: solid 2px red;*/
-  width: 40%;
-  text-align: right;
-  margin-right: 200px;
-
 
 }
 
+.wrapper #first .main_content{
+ /*border: solid 2px red;*/
+ display:flex;
+ flex-direction: column;
+  width: 40%;
+  text-align: right;
+  margin-right: 100px;
+}
 
-.wrapper #first .main_content .header h1{
-  padding: 30px;
-  color: gray;
-  width:50%;
+.wrapper #first .main_content .header h1 {
+  padding: 20px 0 20px 200px;
   /*border:solid 1px red;*/
-  margin-left: 53%;
  font-family: 'Abril Fatface';
  font-size: 45px;
  font-weight: 200;
+ color: royalblue;
+}
+.wrapper #first .main_content .line1  {
+  width:100%;
+  height: 2px;
+  background-color: royalblue;
+  margin:3px;   
+  }
+  
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Merriweather';
 }
 
 .wrapper #first .main_content .slogan{
@@ -156,83 +168,322 @@ margin:3px;
   color: #717171;
   line-height: 25px;
  /* border-bottom: 1px solid blue;*/
-  padding: 0 0 30px;
+  padding: 30px 0 70px;
+  font-size: 22px;
+  letter-spacing: 0.1em;
 }
 
 .wrapper #first .main_content .quote {
   padding: 10px;
  font-style: italic;
+ color: #717171;
 }
+
+
+/* Second Page*/
 
 .wrapper #second {
   display: flex;
-  border: solid 5px blueviolet;
-  width: 100%;
+ /* border: solid 5px blueviolet;*/
+  width: 90%;
   height: 1000px;
   margin-left: 200 px;
   justify-content: center;
   align-items: center;
-} 
+  align-self: flex-end;
+  margin-bottom: 300px;
 
+} 
 #about {
-border: solid 2px red;
+border: solid 2px royalblue;
 display: flex;
- justify-content: center;
  align-items: center;
  flex-direction: column ;
  width:700px;
  text-align: center;
- 
+ padding: 30px 30px 30px 30px;
+
 }
+.wrapper #second #about h1 {
+font-weight: 600;
+color:royalblue;
+font-family: 'Merriweather';
+ }
 .wrapper #second #about .p1 {
-  padding: 20px;
+  padding: 40px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
 }
+
+/*Third page*/
 
 .wrapper #third {
-
   display: flex;
-  border: solid 5px blueviolet;
+ /*border: solid 5px blueviolet;*/
   width: 100%;
-  height: 1000px;
+  height: 900px;
   /*justify-content: center;
-  align-items: center;*/
- 
+  align-items: center;*/ 
 }
 
 .wrapper #third .images {
-
-  border: 1px solid red;
+  display: flex;
+  /*border: 1px solid red;*/
   align-self: stretch;
   width:75%;
   margin-left: 200px;
   text-align: center;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;
+}
+.wrapper #third .images img {
+  opacity: 0;
+  height:10%;
+  
+  /*border:1px solid red;*/
 }
 
 .wrapper #third .activities {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
+/* border: 1px solid blue;*/
   width: 25%;
   text-align: right;
- 
+  margin-right: 100px;
   
 }
+.wrapper #third .activities h1 {
+font-weight: 800;
+padding-bottom: 20px;
+padding-right: 30px;
+color: royalblue;
+font-family: 'Merriweather';
+}
+  
 .wrapper #third .activities div {
-  border: 1px solid green;
+ /* border: 1px solid green;*/
   flex-grow: 1;
-  margin: 20px;
+  margin: 10px;
+  padding-right: 20px;
+  padding-top: 10px;
   text-align: right;
+  letter-spacing: 0.1em;
+}
+.wrapper #third .activities h2 {
+
+  font-family: 'Bitter';
+  color: royalblue;
+  font-size: 25px;
+  font-family: 'Merriweather';
+}
+.wrapper #third .activities .italic {
+ /* border: 1px solid green;*/
+  margin-top: 10px;
+  font-style: italic;
+  padding-bottom: 8px;
+}
+.wrapper #third .activities .bold {
+  /* border: 1px solid green;*/
+   font-weight: 500;
+   color:royalblue;
+ }
+ 
+ .wrapper #fourth {
+  display: flex;
+ /*border: solid 5px blueviolet;*/
+  width: 100%;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
   
-}
-.wrapper #third .activities p {
-  border: 1px solid green;
-  margin-top: 20px;
-}
+ }
 
 
-.wrapper #third .images img {
-  opacity: 0;
-  height:30%;
+.wrapper #fourth h1 {
   
+ /* border:solid 1px red;*/
+ font-family: 'Abril Fatface';
+ font-size: 48px;
+ font-weight: 200;
+ color: #4169e1;
+ text-align: center;
+ padding-bottom: 20px;
+}
+.wrapper #fourth .shedule img {
+  width:60%;
+  margin-left: 200px;
+}
+footer {
   
+  background:#90ccf4;
+  text-align: right;
+  height: 180px;
+  padding: 30px 140px 30px 0;
+  font-weight: 500;
+  color:black;
+}
+@media screen and (max-width : 1600px) {
+  .wrapper #first {
+ 
+    width: 100%;
+    height: 800px;
+   
+  }
+  .wrapper #first .main_content .slogan{
+
+    color: #717171;
+    line-height: 25px;
+    padding: 30px 0 60px;
+    font-size: 20px;
+
+  }
+
+  .wrapper #third {
+    width: 100%;
+    height: 700px;
+  
+    }
+    .wrapper #second {
+     
+      width: 90%;
+      height: 780px;
+      margin-left: 200 px;
+    
+    } 
+    
+  .wrapper #third .activities {
+
+    width: 30%;
+    margin-right: 100px;
+  }
+  .wrapper #third .activities div {
+     margin: 7px;
+     padding-right: 10px;
+     padding-top:8px;
+  
+   }
+   .wrapper #third .activities h1 {
+
+    padding-right: 12px;
+   
+    }
+}
+
+/*Relative screen*/
+
+@media screen and (max-width : 1250px) {
+
+  .wrapper #first .main_content{
+ 
+     width: 42%;
+     margin-right: 80px;
+   }
+
+  .wrapper #third .activities {
+
+    width: 30%;
+    margin-right: 80px;
+  }
+
+   
+}
+@media screen and (max-width : 1100px) {
+.wrapper #third {
+  width: 100%;
+  height: 900px;
+
+  }
+}
+
+@media screen and (max-width : 1000px) {
+  .wrapper #first .main_content{
+     width: 45%;
+     margin-right: 100px;
+   }
+   .wrapper #first .main_content .header h1 {
+    padding: 20px 0 20px 200px;
+   font-size: 38px;
+   font-weight: 160;
+  
+  }
+   .wrapper #first .main_content .slogan{
+  
+    padding: 20px 0 50px;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+  }
+  #about {
+   
+     width:550px;
+     padding: 30px 30px 30px 30px;
+    
+    }
+
+    .wrapper #second #about .p1 {
+      padding: 40px;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+    }
+
+    .wrapper #third .activities {
+   
+      width: 35%;
+      margin-right: 100px;
+    }
+  
+    .wrapper #third {
+      width: 100%;
+      height: 920px;
+    
+      }
+}
+
+@media screen and (max-width : 800px) {
+  .wrapper #first .main_content{
+     width: 50%;
+     margin-right: 100px;
+   }
+   .wrapper #first .main_content .header h1 {
+    padding: 20px 0 20px 200px;
+   font-size: 38px;
+   font-weight: 180;
+  }
+   .wrapper #first .main_content .slogan{
+    padding: 20px 0 50px;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+  }
+  #about {
+
+     width:400px;
+     padding: 30px 20px 30px 20px;
+    
+    }
+
+    .wrapper #second #about .p1 {
+      padding: 30px;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+    }
+    .wrapper #third {
+      width: 100%;
+      height: 940px;
+    
+      }
+    .wrapper #third .images {
+   
+      width:60%;
+      margin-left: 200px;
+   
+    }
+    
+    .wrapper #third .activities {
+  
+      width: 40%;
+      margin-right: 100px;
+    }
+  
+
 }

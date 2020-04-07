@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <title>Side Navigation Bar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Pacifico&family=Playfair+Display:ital@1&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:wght@400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/transitions.css">
     <script src="./js/theDOM.js"></script>
@@ -15,25 +15,20 @@
 <div class="wrapper">
     <nav class="sidebar">
         <div class = "logo"><a href="#first">Cibus</a></div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
             
         <ul id="list">
-            <li><a href = "#second" id = "goToAbout">About</a></li>
-            <li><a href = "#third">Meals</a></li>
-            <li><a href = "#">Shedule</a></li>
-            <li><a href = "#">Join</a></li>
+            <li><a class = "navbtn" href = "#second" id = "navbtn1">About</a></li>
+            <li><a class = "navbtn" href = "#third">Meals</a></li>
+            <li><a class = "navbtn" href="#fourth">Shedule</a></li>
+            <li><a class = "navbtn" href = "#">Join</a></li>
         </ul> 
-       
-       
-       
-       
+        <div class="search">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
         <div class="social_media">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/madebyabsurd/"  target = "_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/madebyabsurd"  target = "_blank"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>  
     </nav>
@@ -46,6 +41,7 @@
         <div class="header">
           <h1>Food for your mental health</h1>
         </div>  
+        <div class="line1"></div>
         <div class = "slogan">
             <p>You probably ask what is food for mental health? It is our new activity nutrition program we offer people who is looking for an emotional boost.  People share their daily meals on our platform to support the ones in need. </p>
         </div>
@@ -54,16 +50,17 @@
         </div>  
     </div>
 </div>
+
+
+
+
 <div id = "second">
     <div id = "about">
-        <h1>ABOUT</h1>
+        <h1>About</h1>
         <p class = "p1">Welcome! Cubits is a sharing community platform for people with hunger for new activities. Here you can learn about many things: from painting like a Van Goh to stretchy yoga  which will unlock the muscles you never knew you have by using our fun and inclusive platform. How it works:
 
         <br/>
 
-            or
-            
-            <br/>    
             
             choose any of our suggestable daily meals and try it yourself!
             
@@ -91,31 +88,51 @@
 <div id = "third">
     <div class = "images"> 
         
-    <img id = "img1"
-    src = "./IMG/pic1.jpg">
+    <img src = "./IMG/01.png">
+    <img src = "./IMG/044.png">
+    <img src = "./IMG/04.png">
+    <img src = "./IMG/08.png">
     </div>
     <div class="activities">
         <h1>Meal recipes</h1>
         <div id="active">
             <h2>Active</h2>
-            <p>Meals to make you strong not only phisicaly but also mentaly</p>
+            <p class = "italic">Meals to make you strong not only phisicaly but also mentaly: </p>
+                <p class = "bold">yoga, pilates, zumba, etc.</p>
         </div>
-        <div class="creative">
+        <div id="creative">
             <h2>Creative</h2>
-            <p>Meals for your creative explorations and inspiration</p>
+            <p class = "italic">Meals for your creative explorations and inspiration: </p>
+                <p class = "bold">drawing, sewing, graphic design, cooking etc.</p>
         </div>
-        <div class="thinking">
+        <div id="thinking">
             <h2>Thinking</h2>
-            <p>Meals to challange your brain  </p>
+            <p class = "italic">Meals to challange your brain:  </p>
+            <p class = "bold">IT, 3D modelling, SQL</p>
         </div>
-        <div class="satisfying">
+        <div id="satisfying">
             <h2>Satistfying</h2>
-            <p>Meals to ease your mind with some inspirational talks and podcasts . It provides tips how to cope with stress and loneliness.</p>
+            <p class = "italic">Meals to ease your mind with some inspirational talks and podcasts . It provides tips how to cope with stress and loneliness.</p>
+            
         </div>
     </div>
 
 
 </div>
+<div id="fourth">
+    <div class="shedule">
+        <h1>Shedule</h1>
+        <img src = "./IMG/shedule.png">
+   
 </div>
+</div>
+</div>
+<footer>
+    Iiustrations by: https://absurd.design/ <br/>
+    Contact:<br/>
+    info@utc0.com <br/>
+    +44xxxxxxxxxx <br/>
+    2020 London United Kingdom <br/>
+</footer>
 </body>
 </html>
